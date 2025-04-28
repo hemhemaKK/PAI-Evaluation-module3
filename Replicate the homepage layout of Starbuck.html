@@ -21,19 +21,42 @@
             background-color: rgb(4, 59, 45);
             color: aliceblue;
         }
-        p{
+        .head p{
             margin-left: 80px;
             font-size: 22px;
         }
         .main{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
             height: 30vh;
             width: 70vw;
-            border: 2px solid black;
+            /* border: 2px solid black; */
             margin: auto;
             margin-top: 60px;
+            background: linear-gradient(0deg,rgb(202, 199, 199) 2%, rgb(184, 189, 47) 53%, rgb(238, 212, 21) 100%);
+            border-radius: 10px;
+            box-shadow: 0 0 10px 0 rgb(20, 27, 29);
+            gap:0;
         }
         .main img{
-            height: 40vh;
+            height: 30vh;
+            margin-left: 10px;
+            margin-top: 1px;
+        }
+        .main>div:nth-of-type(2){
+            width: 100%;
+        }
+        .h2{
+            margin-left: 80px;
+        }
+        .cards{
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+
+        }
+        .cards>div>img{
+            height: 20vh;
+            border-radius: 50%;
         }
     </style>
 </head>
@@ -54,8 +77,28 @@
         </div>
 
         <div class="main">
+            <div>
             <img src="https://preprodtsbstorage.blob.core.windows.net/cms/uploads/SUMMER_VOUCHER_png_05_bd3dce1159.png"/>
-        </div>
+            </div> 
+            <div>        
+             <p>All new</p>
+            <h3>Refreshing New Summer Specials</h3>
+            <p>Beat the heat with refreshing summer beverages and indulgent mango delights</p>
+            </div>
+            <h2>Handcrafted Curations</h2>
+         </div> 
+         <br>
+         <br>
+         <br>
+         <br>
+         <div class="cards">
+            <div><img src="https://www.starbucks.in/assets/icon/Bestseller.webp" alt=""></div>
+            <div><img src="https://www.starbucks.in/assets/icon/Drinks.webp" alt=""></div>
+            <div><img src="https://www.starbucks.in/assets/icon/Food.webp" alt=""></div>
+            <div><img src="https://www.starbucks.in/assets/icon/Merchandise.webp" alt=""></div>
+            <div><img src="https://www.starbucks.in/assets/icon/CoffeeAtHome.webp" alt=""></div>
+            <div><img src="https://www.starbucks.in/assets/icon/ReadyToEat.webp" alt=""></div>
+         </div>
     </main>
 
 
